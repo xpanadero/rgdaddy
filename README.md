@@ -24,7 +24,8 @@ Or install it yourself as:
 
 ## Usage
 
-```require 'rgdaddy'
+```ruby
+require 'rgdaddy'
 
 # Create a RGDaddy object
 r=RGDaddy::RGDaddy.new;
