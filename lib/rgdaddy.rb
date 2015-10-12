@@ -50,7 +50,6 @@ module RGDaddy
       while response.code == "302"
 
           login=URI.parse(response.header['location'])
-          puts login;
 
           https = Net::HTTP.new(login.host, login.port)
           https.use_ssl = true
@@ -114,7 +113,7 @@ module RGDaddy
           end
       end
       parse_nonce(response.body)
-      parse_A_zone(response.body,zone)
+      parse_dns_zone(response.body,zone)
 
     end
 

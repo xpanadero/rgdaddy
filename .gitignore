@@ -6,11 +6,16 @@
 
 # Ignore bundler config.
 /.bundle
+
 # File backups
 *~
+
 # Gets created when joe crashes
 DEADJOE
 
 # Ignore ruby-version and ruby-gem
 .ruby-gemset
 .ruby-version
+
+# pkg Dir
+pkg/
